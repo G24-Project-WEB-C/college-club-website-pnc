@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Club | About</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css">
+
+    <style>
+        :root {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0f1a;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#0b0f1a] text-white font-sans">
+    <header class="sticky top-0 z-[1000] bg-[#0b1020]/90 backdrop-blur-[15px] border-b border-white/[0.08]">
+  <div class="min-h-20 flex items-center justify-between px-12">
+    <a href="index.html" class="text-[1.2rem] font-extrabold text-white"> 🎓 <span class="ml-[5px]">STUDENT CLUB</span> </a>
+    <button id="menuToggle" class="hidden max-[768px]:block bg-transparent border-none text-white text-[1.8rem] cursor-pointer">☰</button>
+    <nav id="navMenu" class=" flex gap-8 text-lg px-4 max-[768px]:hidden max-[768px]:absolute max-[768px]:top-[75px] max-[768px]:left-0 max-[768px]:right-0 max-[768px]:p-[25px] max-[768px]:bg-[#0b1020] max-[768px]:flex-col max-[768px]:gap-5 [&.mobile-open]:max-[768px]:flex">
+      <a href="../index.html" class="text-white hover:text-[#39e3d2]">Home</a>
+      <a href="../about.html" class="inline-block pb-1 border-b border-cyan-400 text-white hover:text-[#39e3d2]">About</a>
+      <a href="./clubs.html" class="text-white hover:text-[#39e3d2]">Clubs</a>
+      <a href="./events.html" class="text-white hover:text-[#39e3d2]">Events</a>
+      <a href="../contact.html" class="text-white hover:text-[#39e3d2]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+    <section class="relative flex flex-col items-center text-center px-4 sm:px-6 md:px-10 lg:px-20 py-20 sm:py-24 md:py-28 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.25),transparent_60%)]"></div>
+        <div class="relative z-10 w-full max-w-4xl mx-auto">
+            <div class="flx justify-center items-centere inline-flex items-center gap-2 border border-cyan-400/30 rounded-full px-4 sm:px-5 py-2 mb-6 sm:mb-8 bg-white/5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg>
+                <span class="text-cyan-300 font-semibold tracking-wide text-sm sm:text-base">WHO WE ARE</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5 sm:mb-6 leading-tight"> About Student Club</h1>
+            <p class="text-slate-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"> Building a stronger student community through activities, friendship, and learning.</p>
+        </div>
+    </section>
+
+    <section class="px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20 md:py-24 bg-[#0b0f1a]">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <img src="image/image.png" alt="Student club group photo" class="rounded-2xl w-full h-64 sm:h-80 md:h-96 lg:h-450px object-cover shadow-2xl">
+            </div>
+            <div class="text-center lg:text-left">
+                <p class="text-cyan-400 font-semibold tracking-widest text-base sm:text-lg mb-3">ABOUT US</p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-5 sm:mb-6 leading-tight">More Than Just a Club</h2>
+                <p class="text-slate-400 mb-4 leading-relaxed text-sm sm:text-base">Our Student Club Website connects students with different clubs and activities at school.</p>
+                <p class="text-slate-400 mb-4 leading-relaxed text-sm sm:text-base">Students can explore their interests,participate in events, develop new skills, and make new friends.</p>
+                <p class="text-slate-400 leading-relaxed text-sm sm:text-base"> We believe every student has something special to contribute to the school community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20 md:py-24 bg-[#141a2c] text-center">
+        <p class="text-cyan-400 font-semibold tracking-widest text-base sm:text-lg mb-3">OUR VALUES</p>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 sm:mb-12 md:mb-16">What We Believe</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 text-left">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 md:p-8 hover:bg-white/10 transition duration-300">
+                <svg class="mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-telescope preview-icon"><path d="m10.065 12.493-6.18 1.318a.934.934 0 0 1-1.108-.702l-.537-2.15a1.07 1.07 0 0 1 .691-1.265l13.504-4.44"/><path d="m13.56 11.747 4.332-.924"/><path d="m16 21-3.105-6.21"/><path d="M16.485 5.94a2 2 0 0 1 1.455-2.425l1.09-.272a1 1 0 0 1 1.212.727l1.515 6.06a1 1 0 0 1-.727 1.213l-1.09.272a2 2 0 0 1-2.425-1.455z"/><path d="m6.158 8.633 1.114 4.456"/><path d="m8 21 3.105-6.21"/><circle cx="12" cy="13" r="2"/></svg>
+                <h3 class="text-lg sm:text-xl font-bold mb-3">Explore</h3>
+                <p class="text-slate-400 leading-relaxed text-sm sm:text-base"> Discover your interests and try something new.</p>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 md:p-8 hover:bg-white/10 transition duration-300">
+                <svg class="mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake preview-icon"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"/></svg>
+                <h3 class="text-lg sm:text-xl font-bold mb-3">Connect</h3>
+                <p class="text-slate-400 leading-relaxed text-sm sm:text-base">Build friendships and work with other students.</p>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-7 md:p-8 hover:bg-white/10 transition duration-300">
+                <svg class="mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket preview-icon"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+                <h3 class="text-lg sm:text-xl font-bold mb-3">Grow</h3>
+                <p class="text-slate-400 leading-relaxed text-sm sm:text-base"> Develop your skills and prepare for your future.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/20 py-8 sm:py-10 px-4 text-center">
+        <p class="text-slate-500 text-sm sm:text-base md:text-lg">&copy; 2026 Student Club. All Rights Reserved.</p>
+    </footer>
+    <script src="./JS/style.js"></script>
+</body>
+</html>

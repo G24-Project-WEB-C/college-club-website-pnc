@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#0b1020',
+                        'dark-card': '#080c18',
+                        'dark-footer': '#060912',
+                        'dark-input': '#10172a',
+                        'accent-cyan': '#39e3d2',
+                        'accent-purple': '#7c3aed',
+                        'custom-muted': '#a8b3c7',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark-bg text-white font-sans line-height-relaxed m-0 p-0 box-border">
+
+<header class="sticky top-0 z-[1000] bg-[#0b1020]/90 backdrop-blur-[15px] border-b border-white/[0.08]">
+  <div class="min-h-20 flex items-center justify-between px-12">
+    <a href="index.html" class="text-[1.2rem] font-extrabold text-white"> 🎓 <span class="ml-[5px]">STUDENT CLUB</span> </a>
+    <button id="menuToggle" class="hidden max-[768px]:block bg-transparent border-none text-white text-[1.8rem] cursor-pointer">☰</button>
+    <nav id="navMenu" class=" flex gap-8 text-lg px-4 max-[768px]:hidden max-[768px]:absolute max-[768px]:top-[75px] max-[768px]:left-0 max-[768px]:right-0 max-[768px]:p-[25px] max-[768px]:bg-[#0b1020] max-[768px]:flex-col max-[768px]:gap-5 [&.mobile-open]:max-[768px]:flex">
+      <a href="../index.html" class="inline-block pb-1 border-b border-cyan-400 text-white hover:text-[#39e3d2]">Home</a>
+      <a href="../about.html" class="text-white hover:text-[#39e3d2]">About</a>
+      <a href="./clubs.html" class="text-white hover:text-[#39e3d2]">Clubs</a>
+      <a href="./events.html" class="text-white hover:text-[#39e3d2]">Events</a>
+      <a href="../contact.html" class="text-white hover:text-[#39e3d2]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="hero min-h-[90vh] flex items-center bg-[radial-gradient(circle_at_20%_30%,rgba(124,58,237,0.3),transparent_35%),radial-gradient(circle_at_80%_70%,rgba(57,227,210,0.2),transparent_35%)]">
+
+    <div class="particles"></div>
+
+    <div class="container hero-content w-[90%] max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-center">
+
+        <div class="hero-text mt-16">
+
+            <span class="badge inline-block px-4 py-2 rounded-[30px] bg-accent-cyan/10 border border-accent-cyan/30 text-accent-cyan">
+                Discover Your Community
+            </span>
+
+            <h1 class="text-[3rem] sm:text-[3.5rem] lg:text-[5.5rem] leading-[1.05] mb-[25px] font-bold">
+                Connect.
+                <span class="text-accent-cyan">Learn.</span>
+                Create.
+                Grow.
+            </h1>
+
+            <p class="max-w-[550px] text-custom-muted text-[1.1rem] mb-[30px]">
+                Discover student clubs, join exciting activities,
+                meet new people, and develop your skills.
+            </p>
+
+            <div class="hero-buttons flex flex-col sm:flex-row gap-[15px] flex-wrap">
+                <a href="clubs.html" class="btn primary-btn inline-block px-6 py-[13px] border-0 rounded-[10px] cursor-pointer transition duration-300 bg-[#7C3AED] from-accent-purple to-accent-cyan text-white hover:-translate-y-[3px] hover:shadow-[0_10px_30px_rgba(57,227,210,0.2)] text-center">
+                    Explore Clubs →
+                </a>
+
+                <a href="contact.html" class="btn secondary-btn inline-block px-6 py-[13px] border border-accent-cyan text-accent-cyan rounded-[10px] cursor-pointer transition duration-300 hover:bg-accent-cyan hover:text-dark-bg text-center">
+                    Join Now
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image order-first lg:order-none">
+            <img src="/Image/index.png" alt="Students working together" class="w-full h-[300px] sm:h-[500px] object-cover rounded-[30px] shadow-[0_30px_80px_rgba(0,0,0,0.5)] border border-white/10">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="section py-[70px] lg:py-[100px]">
+
+    <div class="container w-[90%] sm:w-[92%] max-w-[1200px] mx-auto">
+
+        <div class="section-title text-center max-w-[700px] mx-auto mb-[50px]">
+            <span class="text-accent-cyan font-bold tracking-[2px] text-[0.85rem]">WHY JOIN?</span>
+            <h2 class="text-[2.7rem] my-[10px] font-bold">Make Your Student Life Better</h2>
+            <p class="text-custom-muted">
+                Student clubs give you opportunities to learn,
+                connect, and grow outside the classroom.
+            </p>
+        </div>
+
+        <div class="feature-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px]">
+
+            <div class="feature-card p-[35px] bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition duration-300 hover:-translate-y-[8px] hover:border-accent-cyan hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+                <div class="feature-icon text-[2.5rem] mb-[20px]">🎯</div>
+                <h3 class="mb-[10px] text-xl font-semibold">Explore</h3>
+                <p class="text-custom-muted mb-[20px]">
+                    Find clubs based on your interests and discover
+                    new opportunities.
+                </p>
+                <a href="clubs.html" class="text-accent-cyan hover:underline">Explore Clubs →</a>
+            </div>
+
+            <div class="feature-card p-[35px] bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition duration-300 hover:-translate-y-[8px] hover:border-accent-cyan hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+                <div class="feature-icon text-[2.5rem] mb-[20px]">🤝</div>
+                <h3 class="mb-[10px] text-xl font-semibold">Connect</h3>
+                <p class="text-custom-muted mb-[20px]">
+                    Meet students who share the same interests
+                    and passions.
+                </p>
+                <a href="clubs.html" class="text-accent-cyan hover:underline">Meet Students →</a>
+            </div>
+
+            <div class="feature-card p-[35px] bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition duration-300 hover:-translate-y-[8px] hover:border-accent-cyan hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+                <div class="feature-icon text-[2.5rem] mb-[20px]">🚀</div>
+                <h3 class="mb-[10px] text-xl font-semibold">Grow</h3>
+                <p class="text-custom-muted mb-[20px]">
+                    Improve your skills, confidence, leadership,
+                    and experience.
+                </p>
+                <a href="about.html" class="text-accent-cyan hover:underline">Learn More →</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="stats-section py-[70px] bg-gradient-to-br from-[#17112e] to-[#0b2528]">
+
+    <div class="container stats-grid w-[90%] sm:w-[92%] max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center gap-[30px] lg:gap-0">
+
+        <div class="stat">
+            <h2 class="counter text-[3rem] text-accent-cyan font-bold" data-target="16">16</h2>
+            <p class="text-custom-muted">Clubs</p>
+        </div>
+
+        <div class="stat">
+            <h2 class="counter text-[3rem] text-accent-cyan font-bold" data-target="177">177</h2>
+            <p class="text-custom-muted">Students</p>
+        </div>
+
+        <div class="stat">
+            <h2 class="counter text-[3rem] text-accent-cyan font-bold" data-target="50">50</h2>
+            <p class="text-custom-muted">Events</p>
+        </div>
+
+        <div class="stat">
+            <h2 class="counter text-[3rem] text-accent-cyan font-bold" data-target="100">100</h2>
+            <p class="text-custom-muted">Activities</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="cta-section py-[100px] text-center bg-[radial-gradient(circle,rgba(124,58,237,0.3),transparent_60%)]">
+
+    <div class="container cta-content w-[90%] max-w-[750px] mx-auto">
+
+        <span class="badge inline-block px-4 py-2 rounded-[30px] bg-accent-cyan/10 border border-accent-cyan/30 text-accent-cyan mb-[20px]">🚀 Start Your Journey</span>
+
+        <h2 class="text-[3rem] mb-[15px] font-bold">Find Your Club. Find Your Community.</h2>
+
+        <p class="text-custom-muted mb-[30px]">
+            Your next experience starts here.
+            Join a club and make your student life more exciting.
+        </p>
+
+        <a href="contact.html" class="btn primary-btn inline-block px-6 py-[13px] border-0 rounded-[10px] cursor-pointer transition duration-300 bg-gradient-to-br from-accent-purple to-accent-cyan text-white hover:-translate-y-[3px] hover:shadow-[0_10px_30px_rgba(57,227,210,0.2)]">
+            Join a Club Today →
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<footer class="bg-dark-footer pt-[60px]">
+
+    <div class="container footer-grid w-[90%] sm:w-[92%] max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[40px] pb-[50px]">
+
+        <div>
+            <h3 class="mb-[15px] text-xl font-bold">🎓 STUDENT CLUB</h3>
+            <p class="text-custom-muted">
+                Connect. Learn. Create. Grow.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="mb-[15px] text-lg font-semibold">Quick Links</h4>
+            <a href="index.html" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">Home</a>
+            <a href="./about.html" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">About</a>
+            <a href="./Src/clubs.html" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">Clubs</a>
+            <a href="./Src/events.html" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">Events</a>
+        </div>
+
+        <div>
+            <h4 class="mb-[15px] text-lg font-semibold">More</h4>
+            <a href="./contact.html" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">Contact</a>
+        </div>
+
+        <div>
+            <h4 class="mb-[15px] text-lg font-semibold">Follow Us</h4>
+            <div class="socials">
+                <a href="#" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">Facebook</a>
+                <a href="#" class="block my-[7px] text-custom-muted hover:text-accent-cyan transition duration-300">Telegram</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom text-center p-[20px] border-t border-white/[0.08] text-custom-muted">
+        © 2026 Student Club. All Rights Reserved.
+    </div>
+</footer>
+<script src="./JS/style.js"></script>
+</body>
+</html>

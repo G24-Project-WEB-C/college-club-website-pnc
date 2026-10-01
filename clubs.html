@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club</title>
+    <link rel="stylesheet" href="./Src/output.css">
+  </head>
+  
+<body class="font-sans bg-[#0b1020] text-white leading-relaxed max-[992px]:grid-cols-2">
+<header class="sticky top-0 z-[1000] bg-[#0b1020]/90 backdrop-blur-[15px] border-b border-white/[0.08]">
+  <div class="min-h-20 flex items-center justify-between px-12">
+    <a href="index.html" class="text-[1.2rem] font-extrabold text-white"> 🎓 <span class="ml-[5px]">STUDENT CLUB</span> </a>
+    <button id="menuToggle" class="hidden max-[768px]:block bg-transparent border-none text-white text-[1.8rem] cursor-pointer">☰</button>
+    <nav id="navMenu" class=" flex gap-8 text-lg px-4 max-[768px]:hidden max-[768px]:absolute max-[768px]:top-[75px] max-[768px]:left-0 max-[768px]:right-0 max-[768px]:p-[25px] max-[768px]:bg-[#0b1020] max-[768px]:flex-col max-[768px]:gap-5 [&.mobile-open]:max-[768px]:flex">
+      <a href="../index.html" class="text-white hover:text-[#39e3d2]">Home</a>
+      <a href="../about.html" class="text-white hover:text-[#39e3d2]">About</a>
+      <a href="./clubs.html" class="inline-block pb-1 border-b border-cyan-400 text-white hover:text-[#39e3d2]">Clubs</a>
+      <a href="./events.html" class="text-white hover:text-[#39e3d2]">Events</a>
+      <a href="../contact.html" class="text-white hover:text-[#39e3d2]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+    <section class="py-20 pt-30 text-center bg-[radial-gradient(circle,_rgba(124,58,237,0.2)_0%,_transparent_50%)]">
+      <div class="w-[90%] max-w-6xl mx-auto flex flex-col justify-center items-center gap-8">
+        <span class="flex flex-row items-center justify-center gap-2 px-4 py-2 rounded-full border border-teal-500"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg> EXPLORE</span>
+        <h1 class="text-6xl max-[768px]:text-[2.8rem] mbs-4 font-bold">Explore Our Clubs</h1>
+        <p class="text-[#a8b3c7] max-w-2xl mx-auto mb-6">Find a club that matches your passion and interests.</p>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="w-[90%] max-w-6xl mx-auto">
+        <div class=" grid grid-cols-4 gap-6 max-[992px]:grid-cols-2 max-[768px]:grid-cols-1">
+          <!-- IT​  Awareness-->
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/IT Awareness.png" alt="IT Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop preview-icon"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"/><path d="M20.054 15.987H3.946"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">IT Awareness Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Learn programming, web development, and
+                technology.
+              </p>
+
+              <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Design.png" alt="Art Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette preview-icon"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Design Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">Explore drawing, painting, design, and creative activities.</p>
+
+              <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Art Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Sport.jpg" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volleyball preview-icon"><path d="M11 7a16 16 20 0 1 10.98 4.362"/><path d="M12 12a13 13 0 0 1-8.66 5"/><path d="M16.83 13.634a16 16 0 0 1-9.267 7.328"/><path d="M20.66 17A13 13 0 0 0 12 12a13 13 0 0 1 0-10"/><path d="M8.17 15.366a16 16 0 0 1-1.713-11.69"/><circle cx="12" cy="12" r="10"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Sports Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Participate in football, basketball, volleyball, and other
+                sports.
+              </p>
+
+              <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Library.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book preview-icon"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Library Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Improve your reading skill by reading book 
+                every day.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Aerobic.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play preview-icon"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/><circle cx="12" cy="12" r="10"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Aerobic Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Participate in dancing, enjoying with activities every weekend.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Yoga.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-activity preview-icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M17 12h-2l-2 5-2-10-2 5H7"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Yoga Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Participate do exercise. and activities together for your physical.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Cooking.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cooking-pot preview-icon"><path d="M2 12h20"/><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="m4 8 16-4"/><path d="m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Cooking Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Enjoy cooking, eating, and happiness with activities.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/SA.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-check preview-icon"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="m16 9-5.5 5.5L8 12"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">SA Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                always clean and best prepare for our school with all student.
+              </p>
+
+              <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Film.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film preview-icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h18"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M17 7.5h4"/><path d="M17 16.5h4"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Film Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Enjoy with performances and funny activities together with out club.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Gender1.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-venus-and-mars preview-icon"><path d="M10 20h4"/><path d="M12 16v6"/><path d="M17 2h4v4"/><path d="m21 2-5.46 5.46"/><circle cx="12" cy="11" r="5"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Gender Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Everything give to you love, trust, be honest, friendship.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/WEB.png" alt="Sports Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-check preview-icon"><path d="m15 6 2 2 4-4"/><path d="M2 12h20A10 10 0 1 1 12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 4-10"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">WEB Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Participate in football, basketball, volleyball, and other
+                sports.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Sports Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/music..png" alt="Music Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music preview-icon"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Music Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Discover singing, instruments and performances with pleng.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Music Club')">
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Promoting.png" alt="English Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scale preview-icon"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Promoting Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Improve English speaking, writing, vocabulary, and
+                communication.
+              </p>
+
+              <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button
+                  class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')"
+                  onclick="showClub('English Club')"
+                >
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Photography.png" alt="Photography Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera preview-icon"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Photography Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Learn photography, editing, composition and taking Photoes.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button
+                 class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')"
+                  onclick="showClub('Photography Club')"
+                >
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Public.png" alt="Environment Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-key preview-icon"><path d="M20 11v6"/><path d="M20 13h2"/><path d="M3 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 2.072.578"/><circle cx="10" cy="7" r="4"/><circle cx="20" cy="19" r="2"/></svg></span>
+
+              <h3 class="my-2 text-xl font-bold">Public Speaking Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Speak clearly, build confident, and speaking skills for your best.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button
+                  class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')"
+                  onclick="showClub('Environment Club')"
+                >
+                  View Club
+                </button>
+
+                <a href="../contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">
+                  Join Club
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-hidden bg-white/[0.04] border border-white/[0.08] rounded-[20px] transition-all duration-300 hover:-translate-y-2 hover:border-[#7c3aed]">
+            <img src="../Image/Robotic.png" alt="Robotics Club" class="h-55 w-full object-cover" />
+
+            <div class="p-5">
+              <span class="text-[2rem]"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39E3D2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot preview-icon"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></span>
+
+              <h3 class="my-2 text-2xl font-bold">Robotics Club</h3>
+
+              <p class="text-[#a8b3c7] text-[0.9rem] mb-4">
+                Build robots, explore programming, and electronics.
+              </p>
+
+               <small class="text-[#39e3d2] flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-group preview-icon"><path d="M17 21v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1"/><path d="M19 10h1a2 2 0 012 2v1"/><path d="M5 10H4a2 2 0 00-2 2v1"/><circle cx="12" cy="11" r="3"/><circle cx="18" cy="4" r="2"/><circle cx="6" cy="4" r="2"/></svg> 85 Members</small>
+
+              <div class=" flex gap-2 mt-5 max-[480px]:flex-col">
+                <button
+                  class="flex-1 py-2.5 px-4 rounded-lg bg-[#eee] hover:bg-white text-black text-sm font-medium text-center transition-colors cursor-pointer" onclick="showClub('IT Club')" onclick="showClub('Robotics Club')">View Club
+                </button>
+                <a href="contact.html" class="flex-1 py-2.5 px-4 rounded-lg bg-[#7C3AED] hover:opacity-90 text-white text-sm font-semibold text-center transition-opacity cursor-pointer">Join Club</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex justify-center item py-4">© 2026 Student Club. All Rights Reserved.</div>
+    </footer>
+    <script src="./JS/style.js"></script>
+  </body>
+</html>
