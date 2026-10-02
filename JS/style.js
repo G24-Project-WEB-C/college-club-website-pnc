@@ -4,15 +4,12 @@ const navMenu = document.getElementById("navMenu");
 
 if (menuToggle && navMenu) {
 
-    // Open / close mobile menu
     menuToggle.addEventListener("click", function () {
 
         navMenu.classList.toggle("mobile-open");
 
     });
 
-
-    // Close menu when clicking a navigation link
     const navLinks = navMenu.querySelectorAll("a");
 
     navLinks.forEach(function (link) {
